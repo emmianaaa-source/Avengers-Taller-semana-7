@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="VentanaPrincipal">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="BorderLayout" hgap="12" vgap="12">
+    <constraints>
+      <xy x="20" y="20" width="980" height="560"/>
+    </constraints>
+    <properties/>
+    <border type="empty">
+      <size top="12" left="12" bottom="12" right="12"/>
+    </border>
+    <children>
+      <grid id="topPanel" layout-manager="BorderLayout" hgap="10" vgap="10">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="lblTitulo" class="javax.swing.JLabel">
+            <constraints border-constraint="West"/>
+            <properties>
+              <font name="SansSerif" size="18" style="1"/>
+              <text value="Gestión de Misiones y Pagos - Avengers"/>
+            </properties>
+          </component>
+          <grid id="repoPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="lblEstructura" class="javax.swing.JLabel">
+                <constraints/>
+                <properties>
+                  <text value="Estructura de datos:"/>
+                </properties>
+              </component>
+              <component id="cmbEstructura" class="javax.swing.JComboBox" binding="cmbEstructura">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="formPanel" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="West"/>
+        <properties>
+          <preferredSize width="340" height="-1"/>
+        </properties>
+        <border type="etched" title="Datos del Avenger"/>
+        <children>
+          <component id="lblId" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="ID:"/>
+            </properties>
+          </component>
+          <grid id="idRowPanel" layout-manager="BorderLayout" hgap="5" vgap="0">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="txtId" class="javax.swing.JTextField" binding="txtId">
+                <constraints border-constraint="Center"/>
+                <properties/>
+              </component>
+              <component id="btnBuscar" class="javax.swing.JButton" binding="btnBuscar">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <text value="Buscar"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="lblNombre" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Nombre:"/>
+            </properties>
+          </component>
+          <component id="txtNombre" class="javax.swing.JTextField" binding="txtNombre">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="lblMision" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Misión:"/>
+            </properties>
+          </component>
+          <component id="txtMision" class="javax.swing.JTextField" binding="txtMision">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="lblPeligrosidad" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Peligrosidad (1-5):"/>
+            </properties>
+          </component>
+          <component id="txtPeligrosidad" class="javax.swing.JTextField" binding="txtPeligrosidad">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="lblPago" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pago mensual ($):"/>
+            </properties>
+          </component>
+          <component id="txtPagoMensual" class="javax.swing.JTextField" binding="txtPagoMensual">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+          </component>
+          <grid id="btnGroupPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="6" vgap="6">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="btnRegistrar" class="javax.swing.JButton" binding="btnRegistrar">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Registrar Avenger"/>
+                </properties>
+              </component>
+              <component id="btnModificar" class="javax.swing.JButton" binding="btnModificar">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Modificar por ID"/>
+                </properties>
+              </component>
+              <component id="btnLimpiar" class="javax.swing.JButton" binding="btnLimpiar">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Limpiar Campos"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="vSpacerForm">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+        </children>
+      </grid>
+      <tabbedpane id="pestanas" binding="pestanas">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="tabListado" layout-manager="BorderLayout" hgap="8" vgap="8">
+            <constraints>
+              <tabbedpane title="Listado de Avengers"/>
+            </constraints>
+            <properties/>
+            <border type="empty">
+              <size top="8" left="8" bottom="8" right="8"/>
+            </border>
+            <children>
+              <scrollpane id="scrollListado">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="tblListado" class="javax.swing.JTable" binding="tblListado">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="pieListado" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="btnListar" class="javax.swing.JButton" binding="btnListar">
+                    <constraints/>
+                    <properties>
+                      <text value="Actualizar Listado"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="tabInforme" layout-manager="BorderLayout" hgap="8" vgap="8">
+            <constraints>
+              <tabbedpane title="Informe de Pagos"/>
+            </constraints>
+            <properties/>
+            <border type="empty">
+              <size top="8" left="8" bottom="8" right="8"/>
+            </border>
+            <children>
+              <scrollpane id="scrollInforme">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="tblInforme" class="javax.swing.JTable" binding="tblInforme">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="pieInforme" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="lblResumenInforme" class="javax.swing.JLabel" binding="lblResumenInforme">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <font name="SansSerif" size="12" style="1"/>
+                      <text value="Total Avengers: 0 | Desembolso Neto Total: $0.00"/>
+                    </properties>
+                  </component>
+                  <component id="btnInforme" class="javax.swing.JButton" binding="btnInforme">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <text value="Recalcular Informe"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>

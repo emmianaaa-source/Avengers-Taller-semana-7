@@ -1,10 +1,9 @@
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class RepositorioHashMap implements RepositorioAvengers {
-    private final HashMap<String, Avenger> avengers = new HashMap<>();
+    private final LinkedHashMap<String, Avenger> avengers = new LinkedHashMap<>();
 
     @Override
     public boolean registrar(Avenger a) {
@@ -31,8 +30,6 @@ public class RepositorioHashMap implements RepositorioAvengers {
 
     @Override
     public List<Avenger> listar() {
-        List<Avenger> lista = new ArrayList<>(avengers.values());
-        lista.sort(Comparator.comparing(Avenger::getId));
-        return lista;
+        return new ArrayList<>(avengers.values());
     }
 }
